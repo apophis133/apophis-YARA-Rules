@@ -10,7 +10,8 @@ strings:
     $s4 = "EdgeBrowser@stealer" ascii wide
     $s5 = "FirefoxBrowser@stealer" ascii wide
     $s6 = "stealertest.dll" ascii wide
- 
+    $s7 = ".xyz" fullword wide
+    $s8 = "hyper-v.exe" fullword wide
 condition: 5 of ($s*)
 
 }
