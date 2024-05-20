@@ -2,33 +2,17 @@ rule true_bot {
  meta:  
         Description = "This is a simple powerful rule to detect true_bot"  
         author      = "michelle khalil" 
-        hash = "717beedcd2431785a0f59d194e47970e9544fbf398d462a305f6ad9a1b1100cb" 
     strings:
         $c2_params_1        = "n=%s&o=%s&a=%d&u=%s&p=%s&d=%s" fullword
         $c2_params_2        = "n=%s&l=%s"   fullword 
         $c2_id              = "%08x-%08x"   fullword
-        $c2_status          = "Not Found"   fullword
-        $c2_method          = "POST "       fullword
-        $c2_proto           = "HTTP/1.0"    fullword
-        $c2_header_host     = "Host: "      fullword
-        $c2_header_ct       = "Content-type: application/x-www-form-urlencoded" fullword
-        $other_workgroup    = "WORKGROUP"           fullword
-        $unknown            = "UNKW"                fullword
-        $load_perms         = "SeDebugPrivilege"    fullword
-        $load_import        = "RtlCreateUserThread" fullword
-        $cmd_del_1          = "\r\n\r\n /c del" fullword wide
-        $cmd_del_2          = ">> NUL" fullword wide
-        $cmd_del_3          = "ComSpec" fullword wide
-        $cmd_del_4          = "/c del" fullword wide
+        $cmd_commands_1     = "LSEL" ascii 
+        $cmd_commands_2     = "TFOUN" ascii 
+        $cmd_commands_3     = "EFE" ascii 
+        $cmd_commands_4     = "S66" ascii 
+        $cmd_commands_5     = "Z66" ascii
         $random_exe         = "%s\\Intel\\RuntimeBroker.exe" fullword wide
         $pipe_word          = "\\\\.\\Pipe\\Scrooling%d" fullword wide
         $random_file        = "\\\\..\\\\.filem.film.AVIVIV" fullword wide
-        $cmd_commands_1     = "LSEL" fullword
-        $cmd_commands_2     = "TFOUN" fullword
-        $cmd_commands_3     = "EFE" fullword
-        $cmd_commands_4     = "S66" fullword
-        $cmd_commands_5     = "Z66" fullword
-        
-
-   condition: 12 of them
+   condition: all of them
 }
