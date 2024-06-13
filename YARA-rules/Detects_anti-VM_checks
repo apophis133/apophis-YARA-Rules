@@ -16,6 +16,5 @@ rule AntiVM {
         $s11 = "prl_tools.exe" fullword ascii wide
         $s12 = "qemu" fullword ascii wide
         $s13 = "virtio" fullword ascii wide
-
     condition:
          uint16(0) == 0x5a4d and 8 of them
