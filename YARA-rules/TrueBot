@@ -1,7 +1,7 @@
 rule true_bot {
  meta:  
-        Description = "This is a simple powerful rule to detect true_bot"  
-        author      = "michelle khalil" 
+        author      = "michelle khalil"
+        Description = "This is a simple powerful rule to detect true_bot"   
     strings:
         $c2_params_1        = "n=%s&o=%s&a=%d&u=%s&p=%s&d=%s" fullword
         $c2_params_2        = "n=%s&l=%s"   fullword 
