@@ -18,3 +18,4 @@ rule AntiVM {
         $s13 = "virtio" fullword ascii wide
     condition:
          uint16(0) == 0x5a4d and 8 of them
+}
