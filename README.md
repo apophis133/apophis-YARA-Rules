@@ -1,2 +1,5 @@
-# Malware-analysis
-here, I'm sharing my yara rules and my scripts to make it easier to hunt malwares
+#Detection and Hunting Signatures
+A set of my detection rules to improve detection and hunting visibility and context. Where applicable, Yara has its description.
+
+#Scripts
+Currently, all scripts available are config extractors for the samples, which I worked on to get these Yara rules.
