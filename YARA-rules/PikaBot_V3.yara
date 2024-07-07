@@ -2,7 +2,7 @@ rule PikaBot
 {
     meta:
         author = "Michelle khalil"
-        description = "rule that detects PikaBot V3"
+        description = "rule detects PikaBot V3"
     strings:
         $s1 = {31 C0 64 8B 0D C0 00 00 00 85 C9 74 01 40 50 8D 54 24 ?? E8 [4] A3 [4] 8B 25 [4] A1}
 
