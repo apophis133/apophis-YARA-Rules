@@ -1,4 +1,4 @@
-rule SUSP_BAT_OBFUSC_Jul24_2 {
+rule SUSP_BAT_OBFUSC_Jul_24 {
    meta:
       description = "Detects indicators of obfuscation in Windows Batch files"
       author = "Michelle khalil"
