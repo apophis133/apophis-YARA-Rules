@@ -30,5 +30,5 @@ These scripts are designed to extract configuration and decrypt strings from mal
 If you have any questions or need further information, you can contact me at:
 
 - **LinkedIn**: [Apophis133](https://www.linkedin.com/in/apophis133)
-- **Blog**: [Apophis133 on Medium](https://apophis133.medium.com)
+- **Blog**: [Medium](https://apophis133.medium.com)
 - **Twitter**: [@Ap0phis133](https://x.com/Ap0phis133)
