@@ -5,11 +5,15 @@ Hello! This repository contains a set of my detection rules to improve detection
 ## YARA Rules
 
 The `YARA-rules` directory contains the following YARA rules :
-- **Detects_WinDefender_AntiEmulator.yara** - Detects specific anti-emulation techniques against the Windows Defender.
-- **Detects_anti-VM_checks.yara** - Identifies anti-virtual machine checks.
-- **PikaBot_V3.yara** - Detection rules for the PikaBot version 3 malware.
-- **TrueBot.yara** - Detection rules for the TrueBot malware.
-- **metastealer.yara** - Detection rules for Metastealer malware.
+- **Anti-VM.yara** - Identifies anti-virtual machine checks.
+- **Exhaust_RAT.yara** - This rule detects Exhaust RAT malware samples.
+- **Meta_STEALER.yara** - Detection rules for Metastealer malware.
+- **PikaBot_V3_LOADER.yara** - Detection rules for the PikaBot version 3 malware.
+- **Pikabot_V1&V2_LOADER.yara** - This rule detects Pikabot loader malware samples of V1 & V2.
+- **SUSP_BAT_OBFUSC.yara** - Detects indicators of obfuscation in Windows Batch files.
+- **True_Bot.yara** - Detection rules for the TrueBot malware.
+- **WinDefender_AntiEmaulation.yara** - Detects specific anti-emulation techniques against the Windows Defender.
+
 
 ## Scripts
 
