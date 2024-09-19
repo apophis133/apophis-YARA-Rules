@@ -1,7 +1,11 @@
-rule true_bot {
- meta:  
-        author      = "michelle khalil"
-        Description = "This is a simple powerful rule to detect true_bot"   
+rule MAL_EXE_True_Bot : EXE BOT {
+   meta:
+      description = "This rule detects True Bot malware samples."
+      author      = "Michelle Khalil"
+      sharing     = "TLP:CLEAR"
+      tags        = "windows,exe,bot"
+      os          = "windows"
+      category    = "Malware"  
     strings:
         $c2_params_1        = "n=%s&o=%s&a=%d&u=%s&p=%s&d=%s" fullword
         $c2_params_2        = "n=%s&l=%s"   fullword 
