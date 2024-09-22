@@ -11,9 +11,9 @@ rule APT_Turla_SilentMoon_sep_22 : EXE MALWARE {
    strings:
       $s1 = "%d blocks, %d sorted, %d scanned" ascii fullword
       $s2 = "REMOTE_NS:ERROR:%d" ascii fullword 
-      $s5 = { 5c 5c 25 73 5c 70 69 70 65 5c 25 73 }
-      $s6 = { 5c 00 69 00 6e 00 66 00 5c 00 00 00 [4-16] 2e 00 69 00 6e 00 66 }    
-      $s7 = { 5c 5c 25 73 5c 69 70 63 24 }
+      $s3 = { 5c 5c 25 73 5c 70 69 70 65 5c 25 73 }
+      $s4 = { 5c 00 69 00 6e 00 66 00 5c 00 00 00 [4-16] 2e 00 69 00 6e 00 66 }    
+      $s5 = { 5c 5c 25 73 5c 69 70 63 24 }
    condition:
       uint16(0) == 0x5a4d and
       filesize > 20KB and
