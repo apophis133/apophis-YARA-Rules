@@ -12,7 +12,8 @@ The `YARA-rules` directory contains the following YARA rules :
 - **Pikabot_V1&V2_LOADER.yara** - This rule detects Pikabot loader malware samples of V1 & V2.
 - **SUSP_BAT_OBFUSC.yara** - Detects indicators of obfuscation in Windows Batch files.
 - **True_Bot.yara** - Detection rules for the TrueBot malware.
-- **WinDefender_AntiEmaulation.yara** - Detects specific anti-emulation techniques against the Windows Defender.
+- **WinDefender_AntiEmaulation.yara** - Detects a specific anti-emulation technique against the WinDefender.
+- **APT_Turla_SilentMoon.yara** - This rule detects SilentMoon malware samples.
 
 
 ## Scripts
