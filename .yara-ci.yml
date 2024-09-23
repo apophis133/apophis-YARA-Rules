@@ -1,1 +1,9 @@
-
+branches:
+  ignore:
+  - "dirty-test**"
+files:
+  accept:
+  - "**.yar"
+  - "**.yara"
+  ignore:
+  - "ignored_files/**"  
