@@ -1,6 +1,6 @@
 rule APT_Turla_SilentMoon_sep_22 : EXE MALWARE {
    meta:
-      description = "This rule detects SilentMoon malware samples."
+      description = "This rule detects SilentMoon malware samples." 
       author      = "Michelle Khalil"
       date        = "2024-09-22"
       sharing     = "TLP:CLEAR"
