@@ -3,7 +3,7 @@ rule MAL_EXE_GULoader_Sep_24 : EXE LOADER {
         description = "This rule detects GULoader malware samples."
         author      = "Michelle Khalil"
         date        = "2024-09-24"
-        sharing     = "TLP:AMBER"
+        sharing     = "TLP:CLEAR"
         tags        = "windows,exe,loader"
         sample      = "2b5098eda716be0a7cedf56acb2ccd19b977301ac6a9677d182c997eb1787ffe"
         os          = "windows"
