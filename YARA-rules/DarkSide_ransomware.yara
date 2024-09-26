@@ -2,7 +2,7 @@ rule MAL_EXE_DarkSide_ransomware_Sep_26 : DarkSide_ransomware {
       meta:
         description = "This rule detects DarkSide_ransomware samples"
         author      = "Michelle khalil"
-        date        = "2024-07-09"
+        date        = "2024-09-26"
         sharing     = "TLP:CLEAR"
         tags        = "windows,exe,ransomware"
         hunting     = "https://hybrid-analysis.com/yara-search/results/0cebf4529251211c76aff95f392935083e56e8eefddff388a20f20fe9e9639b6"
