@@ -15,7 +15,9 @@ def extract_and_decode(file_path, start, end):
     with open(file_path, 'rb') as f:
         f.seek(start)
         data = f.read(end - start)
-    return data.decode('utf-8', errors='ignore')
+    decoded_data = data.decode('utf-8', errors='ignore')
+    # Strip null bytes from decoded data
+    return decoded_data.replace('\x00', '')
 
 def extract_ips(decoded_data):
     """
@@ -33,24 +35,25 @@ def extract_ips(decoded_data):
     ips = [match.group() for match in matches]
     return ips
 
-# Usage example
-file_path = 'ffa6a6b56c154ed6ae3de4b31ee05bd5c1e8161954fe79ffc9f6dc8408d24659'
-start = 0x0E560
-end = 0x0EB60
+if __name__ == "__main__":
+    # Usage example
+    file_path = 'ffa6a6b56c154ed6ae3de4b31ee05bd5c1e8161954fe79ffc9f6dc8408d24659'
+    start = 0x0E560
+    end = 0x0EB60
 
-decoded_data = extract_and_decode(file_path, start, end)
+    decoded_data = extract_and_decode(file_path, start, end)
 
-# Print decoded data to verify (optional)
-print("Decoded Data:")
-print(decoded_data)
+    # Print decoded data to verify (optional)
+    print("Decoded Data:")
+    print(decoded_data)
 
-# Extract IPs
-ips = extract_ips(decoded_data)
+    # Extract IPs
+    ips = extract_ips(decoded_data)
 
-# Print extracted IPs
-print("Extracted IPs:")
-if ips:
-    for ip in ips:
-        print(ip)
-else:
-    print("No IPs found.")
+    if ips:
+        # Print extracted IPs
+        print("Extracted IPs:")
+        for ip in ips:
+            print(f'{ip}\n')
+    else:
+        print("No IPs found.")
